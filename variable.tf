@@ -7,6 +7,7 @@ variable "environment" {
 }
 variable "sg_name" {
   type = string
+  default = ""
 }
 variable "sg_description" {
   type = string
@@ -18,9 +19,6 @@ variable "sg_description" {
   variable "common_tags" {
     type = map
   }
-variable "sg_tags" {
-  type = map
-}
 variable "outbound_rules" {
   default = [{
     from_port = 0

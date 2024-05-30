@@ -23,7 +23,6 @@ resource "aws_security_group" "db_sg_id" {
   }
   tags = merge(
     var.common_tags,
-    var.sg_tags,
     {
         Name = local.sg_name
     }
