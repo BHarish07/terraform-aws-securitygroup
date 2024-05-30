@@ -28,5 +28,6 @@ variable "outbound_rules" {
   }]
 }
 variable "ingress_rules" {
-type = list
+  type = list
+  default = []
 }
